@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Monedas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Conversor de Monedas</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form id="conversor">
+                    <div class="form-group">
+                        <label for="monto">Monto en pesos chilenos:</label>
+                        <input type="number" class="form-control" id="monto" name="monto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="moneda">Moneda a convertir:</label>
+                        <select class="form-control" id="moneda" name="moneda">
+                            <option value="dolar">Dólar</option>
+                            <option value="euro">Euro</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Convertir</button>
+                </form>
+            </div>
+        </div>
+        <div id="resultado" class="mt-4">
+            <h2 class="text-center">Resultado</h2>
+            <div id="conversion" class="text-center"></div>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <canvas id="grafico"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./assets/js/javascript.js"></script>
+</body>
+</html>

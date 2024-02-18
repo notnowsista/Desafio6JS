@@ -1,0 +1,67 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#conversor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    width: 500px;
+}
+
+#conversor label {
+    margin-bottom: 5px;
+}
+
+#conversor input,
+#conversor select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#conversor button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#resultado {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#resultado h2 {
+    text-align: center;
+}
+
+#conversion {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+#conversion strong {
+    color: #007bff;
+}
+
+#grafico {
+    width: 400px;
+    height: 250px;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
